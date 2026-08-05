@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lemmi Arquitetura </title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23221f1b'/%3E%3Cpath d='M12 48V28L32 12l20 16v20M22 48V31h20v17M27 25h10' fill='none' stroke='%23e9dfcf' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta name="description" content="Lemmi Arquitetura é um estúdio de arquitetura autoral dedicado a residências e coberturas que privilegiam luz, matéria e silêncio.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="VOSS Arquitetura">
+<meta property="og:description" content="Arquitetura autoral. Luz, matéria e silêncio.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VOSS Arquitetura">
+<meta name="twitter:description" content="Arquitetura autoral. Luz, matéria e silêncio.">
+
+<link rel="canonical" href="https://www.vossarquitetura.com.br/">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ArchitectureFirm",
+  "name": "VOSS Arquitetura",
+  "description": "Estúdio de arquitetura autoral especializado em residências de alto padrão.",
+  "url": "https://www.vossarquitetura.com.br",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "São Paulo",
+    "addressCountry": "BR"
+  },
+  "sameAs": [
+    "https://instagram.com",
+    "https://linkedin.com"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- Custom cursor -->
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#top" class="header__logo" aria-label="VOSS Arquitetura — início">Lemmi Arquitetura</a>
+    <nav class="header__nav" aria-label="Navegação principal">
+      <a href="#sobre" class="nav-link">Estúdio</a>
+      <a href="#projetos" class="nav-link">Projetos</a>
+      <a href="#galeria" class="nav-link">Galeria</a>
+      <a href="#contato" class="nav-link nav-link--cta" data-magnetic>Contato</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<nav class="mobile-menu" id="mobileMenu" aria-label="Navegação mobile">
+  <a href="#sobre" class="mobile-menu__link">Estúdio</a>
+  <a href="#projetos" class="mobile-menu__link">Projetos</a>
+  <a href="#galeria" class="mobile-menu__link">Galeria</a>
+  <a href="#contato" class="mobile-menu__link">Contato</a>
+</nav>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top" aria-label="Abertura">
+    <div class="hero__media">
+      <img
+        class="hero__img"
+        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2400&auto=format&fit=crop"
+        alt="Fachada de residência contemporânea em concreto aparente, envolta por vegetação nativa ao entardecer"
+        fetchpriority="high">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content" style="--size-hero: clamp(1.125rem, 3vw, 3rem);"> <!-- Tamanho do texto do hero reduzido pela metade -->
+      <p class="hero__eyebrow reveal-word">Sua casa + elegante com ou sem obra</p>
+      <h1 class="hero__title">
+        <span class="line"><span class="word">Traduzimos arquitetura em decisões mais claras, para pessoas viverem melhor</span>
+        <span class="line"><span class="word">Brasília
+</span>
+        <a class="hero__cta line" href="https://api.whatsapp.com/message/5OSQMXEFNDKSO1?autoload=1&app_absent=0&utm_source=ig" target="_blank" rel="noopener noreferrer" aria-label="Agende sua reunião pelo WhatsApp (abre em nova aba)"><span class="word">Agende sua reunião</span></a> <!-- Link do WhatsApp aberto em nova aba -->
+      </h1>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">Role</span>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about" id="sobre" aria-labelledby="sobre-title">
+    <div class="about__grid">
+      <div class="about__media about__media--video reveal" data-reveal> <!-- Variante que preserva a proporção do vídeo -->
+        <!-- Vídeo local carregado por caminho relativo -->
+        <video class="about__video" autoplay muted loop playsinline preload="metadata" aria-label="Vídeo do projeto Ludo"> <!-- Vídeo sem controles de tela cheia ou avanço de tempo -->
+          <source src="Imagens/video.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeo.
+        </video>
+        <button class="about__audio-toggle" type="button" data-about-audio aria-label="Ativar áudio" aria-pressed="false"> <!-- Único controle disponível para o vídeo -->
+          <span class="about__audio-icon" aria-hidden="true">🔇</span>
+        </button>
+      </div>
+      <div class="about__text">
+        <p class="eyebrow reveal" data-reveal>O estúdio</p>
+        <h2 id="sobre-title" class="about__title reveal" data-reveal>
+Nem todo mundo sabe, mas todos os nossos projetos recebem nomes.
+E o Ludo talvez seja um dos que mais representam a história dos moradores.
+
+        </h2>
+        <p class="about__paragraph reveal" data-reveal>
+         O nome veio porque eles adoram jogos. E quando começamos a pensar em como apresentar esse apartamento, percebemos que o próprio Ludo tinha tudo a ver com a família.<br>
+
+Os quatro pinos representam os quatro moradores da casa. Cada um com sua personalidade, seu jeito de viver e ocupar os espaços. Diferentes entre si, mas parte do mesmo jogo.
+
+        </p>
+        <p class="about__paragraph reveal" data-reveal>
+          E talvez seja exatamente isso que a gente mais goste na arquitetura.
+Entender as pessoas primeiro.<br>
+
+Antes de existir um layout, uma marcenaria ou uma paleta de cores, existe uma vida acontecendo ali.
+O apto Ludo é isso.
+Uma casa que conta a história de quem vive nela sem precisar dizer uma palavra.
+
+        </p>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="projects" id="projetos" aria-labelledby="projetos-title">
+    <div class="projects__header reveal" data-reveal>
+      <p class="eyebrow">Seleção</p>
+      <h2 id="projetos-title" class="projects__title">Nossos serviços</h2>
+    </div>
+
+    <article class="project project--services" data-project data-magnetic-area> <!-- Card de serviços com vídeo local -->
+      <div class="project__media project__media--video">
+        <video class="project__video" autoplay muted loop playsinline preload="metadata" aria-label="Vídeo do projeto Lemmi"> <!-- Vídeo sem controles de tela cheia ou avanço de tempo -->
+          <source src="Imagens/video1.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeo.
+        </video>
+        <button class="project__audio-toggle" type="button" data-project-audio aria-label="Ativar áudio" aria-pressed="false"> <!-- Único controle disponível para o vídeo -->
+          <span class="project__audio-icon" aria-hidden="true">🔇</span>
+        </button>
+      </div>
+      <div class="project__info">
+        <div class="project__heading">
+          <h3 class="project__name">Quando arquitetura e marcenaria compartilham os mesmos valores, o resultado transcende o material.<br>
+
+É um privilégio fazer parte dos projetos da Lemmi Arquitetura, transformando ideias em espaços que permanecem no tempo, com a precisão e o cuidado que cada detalhe merece.
+</h3>
+          <span class="project__line" aria-hidden="true"></span>
+        </div>
+       
+       
+      </div>
+    </article>
+
+   
+
+    <a href="#" class="project" data-project data-magnetic-area>
+      <div class="project__media">
+        <img
+          src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2000&auto=format&fit=crop"
+          alt="Cobertura Jardins — terraço contínuo com piscina de borda infinita sobre a cidade"
+          loading="lazy">
+      </div>
+      <div class="project__info">
+        <div class="project__heading">
+          <h3 class="project__name">Cobertura Jardins</h3>
+          <span class="project__line" aria-hidden="true"></span>
+        </div>
+        <div class="project__meta">
+          <span>São Paulo, SP</span>
+          <span>2024</span>
+          <span>310 m²</span>
+        </div>
+        <p class="project__desc">
+          Uma laje de 1958 reinterpretada: piso técnico, marcenaria sob
+          medida e um jardim suspenso que dissolve o limite entre dentro e fora.
+        </p>
+        <span class="project__cta">Ver projeto <i aria-hidden="true">→</i></span>
+      </div>
+    </a>
+
+    <a href="#" class="project project--reverse" data-project data-magnetic-area>
+      <div class="project__media">
+        <img
+          src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=2000&auto=format&fit=crop"
+          alt="Casa do Vale — pavilhão horizontal em madeira entre as montanhas de Itaipava"
+          loading="lazy">
+      </div>
+      <div class="project__info">
+        <div class="project__heading">
+          <h3 class="project__name">Casa do Vale</h3>
+          <span class="project__line" aria-hidden="true"></span>
+        </div>
+        <div class="project__meta">
+          <span>Itaipava, RJ</span>
+          <span>2021</span>
+          <span>540 m²</span>
+        </div>
+        <p class="project__desc">
+          Um pavilhão baixo e alongado, pousado sobre o vale, onde a
+          estrutura em madeira laminada substitui qualquer ornamento.
+        </p>
+        <span class="project__cta">Ver projeto <i aria-hidden="true">→</i></span>
+      </div>
+    </a>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="gallery" id="galeria" aria-labelledby="galeria-title">
+    <div class="gallery__header reveal" data-reveal>
+      <p class="eyebrow">Arquivo</p>
+      <h2 id="galeria-title" class="gallery__title">Galeria</h2>
+    </div>
+    <div class="gallery__grid" id="galleryGrid">
+      <button class="gallery__item reveal" data-reveal data-full="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2200&auto=format&fit=crop" aria-label="Ampliar imagem 1">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Fachada de concreto ao entardecer" loading="lazy">
+      </button>
+      <button class="gallery__item gallery__item--tall reveal" data-reveal data-full="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2200&auto=format&fit=crop" aria-label="Ampliar imagem 2">
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800&auto=format&fit=crop" alt="Fachada em pedra com vista para o mar" loading="lazy">
+      </button>
+      <button class="gallery__item reveal" data-reveal data-full="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2200&auto=format&fit=crop" aria-label="Ampliar imagem 3">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop" alt="Terraço com piscina de borda infinita" loading="lazy">
+      </button>
+      <button class="gallery__item gallery__item--wide reveal" data-reveal data-full="https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=2200&auto=format&fit=crop" aria-label="Ampliar imagem 4">
+        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=800&auto=format&fit=crop" alt="Interior com pé-direito duplo" loading="lazy">
+      </button>
+      <button class="gallery__item reveal" data-reveal data-full="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=2200&auto=format&fit=crop" aria-label="Ampliar imagem 5">
+        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=800&auto=format&fit=crop" alt="Pavilhão de madeira entre montanhas" loading="lazy">
+      </button>
+      <button class="gallery__item gallery__item--tall reveal" data-reveal data-full="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2200&auto=format&fit=crop" aria-label="Ampliar imagem 6">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop" alt="Volume em concreto e madeira integrado à mata" loading="lazy">
+      </button>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="cta-section" id="contato" aria-labelledby="cta-title">
+    <p class="eyebrow reveal" data-reveal>Vamos conversar</p>
+    <h2 id="cta-title" class="cta-section__title reveal" data-reveal>
+      Um projeto começa<br>com uma conversa.
+    </h2>
+    <a href="r" class="cta-section__link reveal" data-reveal data-magnetic link = "https://api.whatsapp.com/send/?phone=61992074190&text&type=phone_number&app_absent=0&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnGQU_OmjWHf7bw0BdvhQTFodGEhUq-3llElFrtTtfYkaJ_MHYSP63G4Am4EU_aem_gMa7iSnO95OcGRzmQVyIyghttps://api.whatsapp.com/send/?phone=61992074190&text&type=phone_number&app_absent=0&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnGQU_OmjWHf7bw0BdvhQTFodGEhUq-3llElFrtTtfYkaJ_MHYSP63G4Am4EU_aem_gMa7iSnO95OcGRzmQVyIyg">
+      Nosso WhatsApp
+    </a>
+  </section>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização de imagem em tela cheia">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Fechar visualização">✕</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Imagem anterior">←</button>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Próxima imagem">→</button>
+</div>
+
+<!-- RODAPÉ -->
+<footer class="footer">
+  <div class="footer__media">
+    <img
+      src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=2400&auto=format&fit=crop"
+      alt="Detalhe de fachada em madeira e concreto ao pôr do sol"
+      loading="lazy">
+  </div>
+  <div class="footer__content">
+    <div class="footer__col">
+      <span class="footer__logo">OA Arquitetos</span>
+      <p class="footer__tagline">Arquitetura autoral.<br>Luz, matéria e silêncio.</p>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__heading">Contato</h3>
+      
+      <a href="tel:+551140028922" class="footer__link">61 9144-4902</a>
+      <address class="footer__address">Lemmi Arquitetura, Quadra 06, Edifício Venâncio, conjunto A, SHN Sl 502, Brasília - DF</address>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__heading">Redes</h3>
+      <a href="https://instagram.com" class="footer__link" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/551140028922" class="footer__link" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://linkedin.com" class="footer__link" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+
+    <div class="footer__col footer__col--newsletter">
+      <h3 class="footer__heading">Newsletter</h3>
+      <p class="footer__newsletter-text">Um projeto por mês, direto na sua caixa de entrada.</p>
+      <form class="newsletter" id="newsletterForm">
+        <label for="newsletterEmail" class="visually-hidden">Seu e-mail</label>
+        <input type="email" id="newsletterEmail" name="email" placeholder="Seu e-mail" required autocomplete="email">
+        <button type="submit" aria-label="Inscrever-se">→</button>
+      </form>
+      <p class="newsletter__status" id="newsletterStatus" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+
+
+
+  <div class="footer__bottom">
+    <p>© <span id="year"></span> AO Arquitetos Todos os direitos reservados.</p>
+    <p>CAU A00000-0</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+ 
